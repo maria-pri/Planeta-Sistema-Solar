@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 90vh;
+  width: 90vw;
+  background-image: url(https://data.1freewallpapers.com/download/starry-sky-stars-space-dark-black-2880x1620.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.descr {
+  display: flex;
+
+  flex-direction: column; /* Ajusta a direção do flex para coluna */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  font-family: system-ui;
+  width: 50%;
+  margin-top: 120px;
+  padding-left: 70px;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 10px; /* Adicione margem inferior ao título para criar espaçamento */
+}
+
+#saturn,
+#isiSaturn {
+  position: absolute;
+  top: 160px;
+  left: 75%;
+  transform: translate(-50%, 0);
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  z-index: 1;
+  background-image: url(https://i.pinimg.com/736x/03/8e/c3/038ec3cf432f1a9ad5f876680d3de338.jpg);
+  background-size: cover;
+  box-shadow: -25px -25px 25px rgb(46, 44, 44) inset, 10px 10px 30px white inset,
+    0px 0px 20px #777149;
+}
+#isiSaturn {
+  background: linear-gradient(
+    20deg,
+    transparent 45%,
+    #9e9560,
+    #5f5661,
+    #f5be58
+  );
+  z-index: 3;
+}
+
+#asteroid {
+  top: 100px;
+  left: 50%;
+  right: 0;
+  margin: auto;
+  width: 350px;
+  height: 350px;
+  border: 3px solid #f8faef;
+  border-right: 3px solid transparent;
+  border-radius: 50%;
+  z-index: 2;
+  animation: animasiAstroid1 7s linear infinite;
+}
+
+#asteroid,
+div {
+  position: absolute;
+  background-color: transparent;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+}
+
+#ast1 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.6;
+  left: -5px;
+  top: -5px;
+  width: 360px;
+  height: 360px;
+  animation: animasiAstroid2 24s linear infinite;
+}
+
+@keyframes animasiAstroid1 {
+  0% {
+    transform: rotateX(-75deg) rotateY(-20deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(-75deg) rotateY(-20deg) rotateZ(360deg);
+  }
+}
+
+@keyframes animasiAstroid2 {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+  }
+}
+
+#ast2 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.8;
+  left: -10px;
+  top: -10px;
+  width: 380px;
+  height: 380px;
+  animation: animasiAstroid2 11s linear infinite;
+}
+
+#ast3 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.7;
+  left: -15px;
+  top: -15px;
+  width: 390px;
+  height: 390px;
+  animation: animasiAstroid2 17s linear infinite;
+}
+
+#ast4 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.6;
+  left: -20px;
+  top: -20px;
+  width: 410px;
+  height: 410px;
+  animation: animasiAstroid2 10s linear infinite;
+}
+
+#ast5 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.7;
+  left: -25px;
+  top: -25px;
+  width: 420px;
+  height: 420px;
+  animation: animasiAstroid2 18s linear infinite;
+}
+
+#ast6 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.8;
+  left: -30px;
+  top: -30px;
+  width: 430px;
+  height: 430px;
+  animation: animasiAstroid2 16s linear infinite;
+}
+
+#ast7 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.6;
+  left: -35px;
+  top: -35px;
+  width: 440px;
+  height: 440px;
+  animation: animasiAstroid2 14s linear infinite;
+}
+
+#ast8 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.8;
+  left: -40px;
+  top: -40px;
+  width: 450px;
+  height: 450px;
+  animation: animasiAstroid2 22s linear infinite;
+}
+
+#ast9 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.5;
+  left: -53px;
+  top: -53px;
+  width: 460px;
+  height: 460px;
+  animation: animasiAstroid2 22s linear infinite;
+}
+
+#ast10 {
+  border: 3px solid #f8faef;
+  border-left: 3px solid transparent;
+  opacity: 0.6;
+  left: -60px;
+  top: -60px;
+  width: 480px;
+  height: 480px;
+  animation: animasiAstroid2 22s linear infinite;
+}
+
+#ast11 {
+  border: 3px solid #f8faef;
+  border-top: 3px solid transparent;
+  opacity: 0.7;
+  left: -67px;
+  top: -67px;
+  width: 490px;
+  height: 490px;
+  animation: animasiAstroid2 21s linear infinite;
+}
+
+#ast12 {
+  border: 3px solid #f8faef;
+  border-bottom: 3px solid transparent;
+  opacity: 0.7;
+  left: -74px;
+  top: -74px;
+  width: 500px;
+  height: 500px;
+  animation: animasiAstroid2 12s linear infinite;
+}
+
+#ast13 {
+  border: 3px solid #f8faef;
+  border-bottom: 3px solid transparent;
+  opacity: 0.7;
+  left: -81px;
+  top: -81px;
+  width: 510px;
+  height: 510px;
+  animation: animasiAstroid2 17s linear infinite;
+}
+
+#ast14 {
+  border: 3px solid #f8faef;
+  border-top: 3px solid transparent;
+  opacity: 0.7;
+  left: -88px;
+  top: -88px;
+  width: 520px;
+  height: 520px;
+  animation: animasiAstroid2 17s linear infinite;
+}
+
+#ast15 {
+  border: 3px solid #f8faef;
+  border-top: 3px solid transparent;
+  opacity: 0.6;
+  left: -95px;
+  top: -95px;
+  width: 530px;
+  height: 530px;
+  animation: animasiAstroid2 12s linear infinite;
+}
+
+#ast16 {
+  border: 3px solid #f8faef;
+  border-top: 3px solid transparent;
+  opacity: 0.5;
+  left: -102px;
+  top: -102px;
+  width: 540px;
+  height: 540px;
+  animation: animasiAstroid2 23s linear infinite;
+}

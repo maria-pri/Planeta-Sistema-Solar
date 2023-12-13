@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Solar</title>
+  <link rel="stylesheet" href="../Sistema/solar.css">
+  <script src="https://kit.fontawesome.com/63456447bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="sun"></div>
+
+    <div class="mercury-outline">
+      <div class="mercury">
+        <p>Mercúrio</p>
+      </div>
+    </div>
+
+    <div class="venus-outline-1">
+      <div class="venus">
+        <p>Vênus</p>
+      </div>
+    </div>
+
+    <div class="earth-outline-1">
+      <div class="earth">
+        <div class="earth-circle">
+          <div class="earth-inner"></div>
+        </div>
+        <p>Terra</p>
+      </div>
+    </div>
+
+    <div class="mars-outline-1">
+      <div class="mars">
+        <p>Marte</p>
+      </div>
+    </div>
+
+    <div class="jupiter-outline-1">
+      <div class="jupiter">
+        <p>Júpiter</p>
+      </div>
+    </div>
+
+    <div class="saturn-outline-1">
+      <div class="saturn">
+        <p>Saturno</p>
+      </div>
+    </div>
+
+    <div class="urans-outline-1">
+      <div class="urans">
+        <p>Urano</p>
+      </div>
+    </div>
+
+    <div class="neptune-outline-1">
+      <div class="neptune">
+        <p>Netuno</p>
+      </div>
+    </div>
+
+    <a class="btn" href="../index.html" onmouseover="changeIcon(true)" onmouseout="changeIcon(false)"><img id="btnIcon" src="../Sistema/icon1.png" alt="Pagina inicial" style="width: 55px; height: 55px;"></a>
+
+    <script>
+      function changeIcon(isMouseOver) {
+        var btnIcon = document.getElementById('btnIcon');
+
+        // Altere a imagem ao passar o mouse ou sair
+        if (isMouseOver) {
+          btnIcon.src = "../Sistema/back.png"; // Nova imagem ao passar o mouse
+        } else {
+          btnIcon.src = "../Sistema/icon1.png"; // Imagem original ao sair do 
+        }
+
+      }
+    </script>
+  </div>
+</body>
+
+</html>

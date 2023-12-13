@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 80vh;
+  width: 100vw;
+  background-image: url(https://data.1freewallpapers.com/download/starry-sky-stars-space-dark-black-2880x1620.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.planet-info {
+  display: flex;
+  position: absolute;
+  flex-direction: column; /* Ajusta a direção do flex para coluna */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  font-family: system-ui;
+  width: 50%;
+  margin-top: 140px;
+  padding-left: 70px;
+  color: white;
+}
+
+.planet-info h1 {
+  margin-bottom: 10px; /* Adicione margem inferior ao título para criar espaçamento */
+}
+
+.globe {
+  float: right;
+  width: 300px;
+  height: 300px;
+  margin-right: 200px;
+  margin-top: 160px;
+  border-radius: 50%;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230331/pngtree-geography-world-map-modified-toned-with-city-lights-elements-of-this-photo-image_2160124.jpg);
+  background-size: cover;
+  box-shadow: -25px -25px 25px black inset, 10px 10px 30px white inset,
+    0px 0px 20px #83c6f3;
+  animation: rotate 35s linear infinite;
+}
+@keyframes rotate {
+  to {
+    background-position: 100%;
+  }
+}
